@@ -15,6 +15,30 @@
 		EC0AFDD2132FDEB0007BAC46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC0AFDD0132FDEB0007BAC46 /* InfoPlist.strings */; };
 		EC0AFDD5132FDEB0007BAC46 /* RestClientTests.h in Resources */ = {isa = PBXBuildFile; fileRef = EC0AFDD4132FDEB0007BAC46 /* RestClientTests.h */; };
 		EC0AFDD7132FDEB0007BAC46 /* RestClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFDD6132FDEB0007BAC46 /* RestClientTests.m */; };
+		EC0AFDE6132FDF1F007BAC46 /* RestClient.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AFDE0132FDF1F007BAC46 /* RestClient.h */; };
+		EC0AFDE7132FDF1F007BAC46 /* RestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFDE1132FDF1F007BAC46 /* RestClient.m */; };
+		EC0AFDE8132FDF1F007BAC46 /* RestClientBlockRunner.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AFDE2132FDF1F007BAC46 /* RestClientBlockRunner.h */; };
+		EC0AFDE9132FDF1F007BAC46 /* RestClientBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFDE3132FDF1F007BAC46 /* RestClientBlockRunner.m */; };
+		EC0AFDEA132FDF1F007BAC46 /* RestClientURLConnectionInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AFDE4132FDF1F007BAC46 /* RestClientURLConnectionInvocation.h */; };
+		EC0AFDEB132FDF1F007BAC46 /* RestClientURLConnectionInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFDE5132FDF1F007BAC46 /* RestClientURLConnectionInvocation.m */; };
+		EC0AFDF0132FDF3C007BAC46 /* BlockRunnerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFDEC132FDF3C007BAC46 /* BlockRunnerSpec.m */; };
+		EC0AFDF1132FDF3C007BAC46 /* FakeBlockRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFDEE132FDF3C007BAC46 /* FakeBlockRunner.m */; };
+		EC0AFDF2132FDF3C007BAC46 /* RestClientSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFDEF132FDF3C007BAC46 /* RestClientSpec.m */; };
+		EC0AFDF7132FDFD8007BAC46 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AFDF5132FDFD8007BAC46 /* NSData+Base64.h */; };
+		EC0AFDF8132FDFD8007BAC46 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFDF6132FDFD8007BAC46 /* NSData+Base64.m */; };
+		EC0AFE06132FDFE4007BAC46 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AFDF9132FDFE4007BAC46 /* JSON.h */; };
+		EC0AFE07132FDFE4007BAC46 /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AFDFA132FDFE4007BAC46 /* NSObject+SBJSON.h */; };
+		EC0AFE08132FDFE4007BAC46 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFDFB132FDFE4007BAC46 /* NSObject+SBJSON.m */; };
+		EC0AFE09132FDFE4007BAC46 /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AFDFC132FDFE4007BAC46 /* NSString+SBJSON.h */; };
+		EC0AFE0A132FDFE4007BAC46 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFDFD132FDFE4007BAC46 /* NSString+SBJSON.m */; };
+		EC0AFE0B132FDFE4007BAC46 /* SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AFDFE132FDFE4007BAC46 /* SBJSON.h */; };
+		EC0AFE0C132FDFE4007BAC46 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFDFF132FDFE4007BAC46 /* SBJSON.m */; };
+		EC0AFE0D132FDFE4007BAC46 /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AFE00132FDFE4007BAC46 /* SBJsonBase.h */; };
+		EC0AFE0E132FDFE4007BAC46 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFE01132FDFE4007BAC46 /* SBJsonBase.m */; };
+		EC0AFE0F132FDFE4007BAC46 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AFE02132FDFE4007BAC46 /* SBJsonParser.h */; };
+		EC0AFE10132FDFE4007BAC46 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFE03132FDFE4007BAC46 /* SBJsonParser.m */; };
+		EC0AFE11132FDFE4007BAC46 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0AFE04132FDFE4007BAC46 /* SBJsonWriter.h */; };
+		EC0AFE12132FDFE4007BAC46 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0AFE05132FDFE4007BAC46 /* SBJsonWriter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,15 +54,40 @@
 /* Begin PBXFileReference section */
 		EC0AFDB7132FDEB0007BAC46 /* libRestClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRestClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0AFDBA132FDEB0007BAC46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		EC0AFDBE132FDEB0007BAC46 /* RestClient-Prefix.pch */ = {isa = PBXFileReference; path = "RestClient-Prefix.pch"; sourceTree = "<group>"; };
+		EC0AFDBE132FDEB0007BAC46 /* RestClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RestClient-Prefix.pch"; sourceTree = "<group>"; };
 		EC0AFDC4132FDEB0007BAC46 /* RestClientTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestClientTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0AFDC5132FDEB0007BAC46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC0AFDC8132FDEB0007BAC46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EC0AFDCF132FDEB0007BAC46 /* RestClientTests-Info.plist */ = {isa = PBXFileReference; path = "RestClientTests-Info.plist"; sourceTree = "<group>"; };
+		EC0AFDCF132FDEB0007BAC46 /* RestClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestClientTests-Info.plist"; sourceTree = "<group>"; };
 		EC0AFDD1132FDEB0007BAC46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EC0AFDD3132FDEB0007BAC46 /* RestClientTests-Prefix.pch */ = {isa = PBXFileReference; path = "RestClientTests-Prefix.pch"; sourceTree = "<group>"; };
+		EC0AFDD3132FDEB0007BAC46 /* RestClientTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RestClientTests-Prefix.pch"; sourceTree = "<group>"; };
 		EC0AFDD4132FDEB0007BAC46 /* RestClientTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestClientTests.h; sourceTree = "<group>"; };
 		EC0AFDD6132FDEB0007BAC46 /* RestClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestClientTests.m; sourceTree = "<group>"; };
+		EC0AFDE0132FDF1F007BAC46 /* RestClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestClient.h; sourceTree = "<group>"; };
+		EC0AFDE1132FDF1F007BAC46 /* RestClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestClient.m; sourceTree = "<group>"; };
+		EC0AFDE2132FDF1F007BAC46 /* RestClientBlockRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestClientBlockRunner.h; sourceTree = "<group>"; };
+		EC0AFDE3132FDF1F007BAC46 /* RestClientBlockRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestClientBlockRunner.m; sourceTree = "<group>"; };
+		EC0AFDE4132FDF1F007BAC46 /* RestClientURLConnectionInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestClientURLConnectionInvocation.h; sourceTree = "<group>"; };
+		EC0AFDE5132FDF1F007BAC46 /* RestClientURLConnectionInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestClientURLConnectionInvocation.m; sourceTree = "<group>"; };
+		EC0AFDEC132FDF3C007BAC46 /* BlockRunnerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockRunnerSpec.m; sourceTree = "<group>"; };
+		EC0AFDED132FDF3C007BAC46 /* FakeBlockRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeBlockRunner.h; sourceTree = "<group>"; };
+		EC0AFDEE132FDF3C007BAC46 /* FakeBlockRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeBlockRunner.m; sourceTree = "<group>"; };
+		EC0AFDEF132FDF3C007BAC46 /* RestClientSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestClientSpec.m; sourceTree = "<group>"; };
+		EC0AFDF5132FDFD8007BAC46 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "Externals/NSData_Base64/NSData+Base64.h"; sourceTree = SOURCE_ROOT; };
+		EC0AFDF6132FDFD8007BAC46 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "Externals/NSData_Base64/NSData+Base64.m"; sourceTree = SOURCE_ROOT; };
+		EC0AFDF9132FDFE4007BAC46 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = Externals/SBJSON/JSON.h; sourceTree = SOURCE_ROOT; };
+		EC0AFDFA132FDFE4007BAC46 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJSON.h"; path = "Externals/SBJSON/NSObject+SBJSON.h"; sourceTree = SOURCE_ROOT; };
+		EC0AFDFB132FDFE4007BAC46 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJSON.m"; path = "Externals/SBJSON/NSObject+SBJSON.m"; sourceTree = SOURCE_ROOT; };
+		EC0AFDFC132FDFE4007BAC46 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SBJSON.h"; path = "Externals/SBJSON/NSString+SBJSON.h"; sourceTree = SOURCE_ROOT; };
+		EC0AFDFD132FDFE4007BAC46 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SBJSON.m"; path = "Externals/SBJSON/NSString+SBJSON.m"; sourceTree = SOURCE_ROOT; };
+		EC0AFDFE132FDFE4007BAC46 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJSON.h; path = Externals/SBJSON/SBJSON.h; sourceTree = SOURCE_ROOT; };
+		EC0AFDFF132FDFE4007BAC46 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJSON.m; path = Externals/SBJSON/SBJSON.m; sourceTree = SOURCE_ROOT; };
+		EC0AFE00132FDFE4007BAC46 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonBase.h; path = Externals/SBJSON/SBJsonBase.h; sourceTree = SOURCE_ROOT; };
+		EC0AFE01132FDFE4007BAC46 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonBase.m; path = Externals/SBJSON/SBJsonBase.m; sourceTree = SOURCE_ROOT; };
+		EC0AFE02132FDFE4007BAC46 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = Externals/SBJSON/SBJsonParser.h; sourceTree = SOURCE_ROOT; };
+		EC0AFE03132FDFE4007BAC46 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = Externals/SBJSON/SBJsonParser.m; sourceTree = SOURCE_ROOT; };
+		EC0AFE04132FDFE4007BAC46 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = Externals/SBJSON/SBJsonWriter.h; sourceTree = SOURCE_ROOT; };
+		EC0AFE05132FDFE4007BAC46 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = Externals/SBJSON/SBJsonWriter.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +145,14 @@
 		EC0AFDBC132FDEB0007BAC46 /* RestClient */ = {
 			isa = PBXGroup;
 			children = (
+				EC0AFDF4132FDF70007BAC46 /* NSData+Base64 */,
+				EC0AFDF3132FDF5A007BAC46 /* SBJSON */,
+				EC0AFDE0132FDF1F007BAC46 /* RestClient.h */,
+				EC0AFDE1132FDF1F007BAC46 /* RestClient.m */,
+				EC0AFDE2132FDF1F007BAC46 /* RestClientBlockRunner.h */,
+				EC0AFDE3132FDF1F007BAC46 /* RestClientBlockRunner.m */,
+				EC0AFDE4132FDF1F007BAC46 /* RestClientURLConnectionInvocation.h */,
+				EC0AFDE5132FDF1F007BAC46 /* RestClientURLConnectionInvocation.m */,
 				EC0AFDBD132FDEB0007BAC46 /* Supporting Files */,
 			);
 			path = RestClient;
@@ -112,6 +169,10 @@
 		EC0AFDCD132FDEB0007BAC46 /* RestClientTests */ = {
 			isa = PBXGroup;
 			children = (
+				EC0AFDEC132FDF3C007BAC46 /* BlockRunnerSpec.m */,
+				EC0AFDED132FDF3C007BAC46 /* FakeBlockRunner.h */,
+				EC0AFDEE132FDF3C007BAC46 /* FakeBlockRunner.m */,
+				EC0AFDEF132FDF3C007BAC46 /* RestClientSpec.m */,
 				EC0AFDD4132FDEB0007BAC46 /* RestClientTests.h */,
 				EC0AFDD6132FDEB0007BAC46 /* RestClientTests.m */,
 				EC0AFDCE132FDEB0007BAC46 /* Supporting Files */,
@@ -129,6 +190,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EC0AFDF3132FDF5A007BAC46 /* SBJSON */ = {
+			isa = PBXGroup;
+			children = (
+				EC0AFDF9132FDFE4007BAC46 /* JSON.h */,
+				EC0AFDFA132FDFE4007BAC46 /* NSObject+SBJSON.h */,
+				EC0AFDFB132FDFE4007BAC46 /* NSObject+SBJSON.m */,
+				EC0AFDFC132FDFE4007BAC46 /* NSString+SBJSON.h */,
+				EC0AFDFD132FDFE4007BAC46 /* NSString+SBJSON.m */,
+				EC0AFDFE132FDFE4007BAC46 /* SBJSON.h */,
+				EC0AFDFF132FDFE4007BAC46 /* SBJSON.m */,
+				EC0AFE00132FDFE4007BAC46 /* SBJsonBase.h */,
+				EC0AFE01132FDFE4007BAC46 /* SBJsonBase.m */,
+				EC0AFE02132FDFE4007BAC46 /* SBJsonParser.h */,
+				EC0AFE03132FDFE4007BAC46 /* SBJsonParser.m */,
+				EC0AFE04132FDFE4007BAC46 /* SBJsonWriter.h */,
+				EC0AFE05132FDFE4007BAC46 /* SBJsonWriter.m */,
+			);
+			name = SBJSON;
+			sourceTree = "<group>";
+		};
+		EC0AFDF4132FDF70007BAC46 /* NSData+Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				EC0AFDF5132FDFD8007BAC46 /* NSData+Base64.h */,
+				EC0AFDF6132FDFD8007BAC46 /* NSData+Base64.m */,
+			);
+			name = "NSData+Base64";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -136,6 +226,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0AFDE6132FDF1F007BAC46 /* RestClient.h in Headers */,
+				EC0AFDE8132FDF1F007BAC46 /* RestClientBlockRunner.h in Headers */,
+				EC0AFDEA132FDF1F007BAC46 /* RestClientURLConnectionInvocation.h in Headers */,
+				EC0AFDF7132FDFD8007BAC46 /* NSData+Base64.h in Headers */,
+				EC0AFE06132FDFE4007BAC46 /* JSON.h in Headers */,
+				EC0AFE07132FDFE4007BAC46 /* NSObject+SBJSON.h in Headers */,
+				EC0AFE09132FDFE4007BAC46 /* NSString+SBJSON.h in Headers */,
+				EC0AFE0B132FDFE4007BAC46 /* SBJSON.h in Headers */,
+				EC0AFE0D132FDFE4007BAC46 /* SBJsonBase.h in Headers */,
+				EC0AFE0F132FDFE4007BAC46 /* SBJsonParser.h in Headers */,
+				EC0AFE11132FDFE4007BAC46 /* SBJsonWriter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +335,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0AFDE7132FDF1F007BAC46 /* RestClient.m in Sources */,
+				EC0AFDE9132FDF1F007BAC46 /* RestClientBlockRunner.m in Sources */,
+				EC0AFDEB132FDF1F007BAC46 /* RestClientURLConnectionInvocation.m in Sources */,
+				EC0AFDF8132FDFD8007BAC46 /* NSData+Base64.m in Sources */,
+				EC0AFE08132FDFE4007BAC46 /* NSObject+SBJSON.m in Sources */,
+				EC0AFE0A132FDFE4007BAC46 /* NSString+SBJSON.m in Sources */,
+				EC0AFE0C132FDFE4007BAC46 /* SBJSON.m in Sources */,
+				EC0AFE0E132FDFE4007BAC46 /* SBJsonBase.m in Sources */,
+				EC0AFE10132FDFE4007BAC46 /* SBJsonParser.m in Sources */,
+				EC0AFE12132FDFE4007BAC46 /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +353,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0AFDD7132FDEB0007BAC46 /* RestClientTests.m in Sources */,
+				EC0AFDF0132FDF3C007BAC46 /* BlockRunnerSpec.m in Sources */,
+				EC0AFDF1132FDF3C007BAC46 /* FakeBlockRunner.m in Sources */,
+				EC0AFDF2132FDF3C007BAC46 /* RestClientSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
