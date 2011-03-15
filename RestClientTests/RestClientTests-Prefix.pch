@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RestClientTests' target in the 'RestClientTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
