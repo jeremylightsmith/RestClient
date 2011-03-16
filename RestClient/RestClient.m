@@ -64,7 +64,7 @@
     } else if ([path hasSuffix:@"/version.json"]) {
       // ignore
     } else {
-      NSLog(@"%@ %@%@ => %i", method, prefix, path, body, [response statusCode]);
+      NSLog(@"%@ %@%@ => %i", method, prefix, path, [response statusCode]);
     }
   }
   
@@ -82,7 +82,9 @@
     return [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
     
   } else {
-    NSString *errorMessage = [RestClientURLConnectionInvocation parseError:[[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease]];
+    NSString *rawResponse = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+    NSLog(@"raw response : %@", rawResponse);
+    NSString *errorMessage = [RestClientURLConnectionInvocation parseError:rawResponse];
 
     if (RC_LOG) {NSLog(@"Rest Client Error StatusCode: %i : %@", [response statusCode], errorMessage);}
     @throw [NSException exceptionWithName:errorMessage

@@ -1,4 +1,4 @@
-#define RC_LOG 0                               // turn this on to turn on rest client logging
+#define RC_LOG 1                                 // turn this on to turn on rest client logging
 #define RestClientStartWaiting @"CMStartWaiting" // this NSNotification will be fired before an asynchronous call if wait == true
 #define RestClientStopWaiting @"CMStopWaiting"   // this NSNotification will be fired after an asynchronous call if wait == false
 
