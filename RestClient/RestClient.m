@@ -127,10 +127,12 @@
 }
 
 - (void)startWaiting {
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = true;
   [[NSNotificationCenter defaultCenter] postNotificationName:RestClientStartWaiting object:nil];
 }
 
 - (void)stopWaiting {
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = false;
   [[NSNotificationCenter defaultCenter] postNotificationName:RestClientStopWaiting object:nil];
 }
 

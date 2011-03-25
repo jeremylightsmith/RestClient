@@ -37,16 +37,22 @@
 }
 
 - (void)startWaiting {
-  [[NSNotificationCenter defaultCenter] postNotificationName:RestClientStartWaiting object:nil];
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = true;
+  if (wait) {
+    [[NSNotificationCenter defaultCenter] postNotificationName:RestClientStartWaiting object:nil];
+  }
 }
 
 - (void)stopWaiting {
-  [[NSNotificationCenter defaultCenter] postNotificationName:RestClientStopWaiting object:nil];
+  [UIApplication sharedApplication].networkActivityIndicatorVisible = false;
+  if (wait) {
+    [[NSNotificationCenter defaultCenter] postNotificationName:RestClientStopWaiting object:nil];
+  }
 }
 
 - (void) start {
   [self retain];
-  if (wait) [self startWaiting];
+  [self startWaiting];
   [[NSURLConnection connectionWithRequest:request delegate:self] start];
 }
 
@@ -56,7 +62,7 @@
 
 - (void) connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
   onError(error);
-  if (wait) [self stopWaiting];
+  [self stopWaiting];
   [self release];
 }
 
@@ -76,7 +82,7 @@
                                       nil]]);
   }
   [data release];
-  if (wait) [self stopWaiting];
+  [self stopWaiting];
   [self release];
 }
 
